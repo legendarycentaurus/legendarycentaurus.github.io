@@ -1,3 +1,45 @@
-h1{
-color:blue;
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+body{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;	
+}
+section{
+	height:100vh;
+}
+.nav{
+	 background-color: rgba(8,8,8,0.8) !important;
+}
+.contact{
+background-color:#131313;
+position:relative;
+}
+.contact-content{
+	font-family: 'Indie Flower', cursive;
+	position: absolute;
+    top: 20%;
+    left: 20%;
+	background-color: #fff;
+    height: 60vh;
+    right: 20%;
+     border: 15px solid transparent;
+   border-image-source:	url(http://www.letstravelsomewhere.com/wp-content/themes/letstravelsomewhere2013/images/bg-airmail-5.jpg);
+    border-image-repeat: repeat;
+    border-image-slice: 10;
+}
+.general-content{
+	font-size:16px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.contact-no{
+	padding-top: 10%;
+}
+.usrImg{
+	width: 25%;
+    position: absolute;
+    right: 20%;
+    top: 30px;
+	
+}
+.contact-icon{
+	display: block;
+    font-size: 1.5em;
 }
