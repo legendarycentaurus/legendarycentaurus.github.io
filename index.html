@@ -1,11 +1,111 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js">
+">
 <link rel="stylesheet" type="text/css" href="css/main.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.7.2/jquery.smooth-scroll.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/3/turn.min.js"></script>
+
+
 </head>
 <body>
 
-<h1 >This is a Blue Heading</h1>
+<nav class="navbar  navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
 
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+     
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+		<li><a href="#projects">Projects</a></li>
+		<li><a href="#resume">Resume</a></li>
+		<li><a href="#contact">Contact</a></li>
+		
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<a id="home"></a>
+<section class="home">Home</section>
+<a id="about"></a>
+<section class="about">About</section>
+<a id="projects"></a>
+<section class="projects">Projects</section>
+<a id="resume"></a>
+<section class="resume">
+		<div id="flipbook">
+				<div class="hard">Resume</div>
+				<!--<div class="hard"></div>
+				<div><img src="img/NanthaKumar_Resume-page-001.jpg" alt="" /> </div>
+				<div><img src="img/NanthaKumar_Resume-page-002.jpg" alt="" /> </div>
+				<div class="hard"></div>
+				<div class="hard"></div>-->
+	</div>
+
+
+
+</section>
+
+
+
+<a id="contact"></a>
+<section class="contact">
+
+<div class="contact-content">
+<div class="Contact-Heading">
+<div class="row">
+<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+	<h1 style="padding: 3% 15%;">Get In Touch</h1>
+</div>
+
+<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+
+<img class="img-circle usrImg" src="https://centrik.in/wp-content/uploads/2017/02/user-image-.png"></img>
+</div>
+</div>
+
+<div class="row general-content">
+<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+	<p style="padding: 3% 15%;">If you have any questions, please feel free to drop me a line. If you don't get an answer immediately, I might just be travelling through the middle of nowhere. I'll get back to you as soon as I can. That's a promise! </p>
+</div>
+<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 contact-no" >
+	<p class="contact-icon glyphicon glyphicon-phone">&nbsp;<span>8754597928</span></p>
+	<p class="contact-icon glyphicon glyphicon-envelope">&nbsp;<span>nanda220896@gmail.comn</span></p>
+</div>
+
+
+</div>
+
+</div>
+</div>
+
+</section>
+
+<script>
+$(document).ready(function() {
+
+  // attach smoothScroll jQuery plugin to indicated links
+  $('.navbar a').smoothScroll();
+ });
+
+</script>
 </body>
 </html>
