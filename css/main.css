@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+@import url(https://fonts.googleapis.com/css?family=Sirin+Stencil);
 body{
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;	
 }
@@ -8,38 +9,90 @@ section{
 .nav{
 	 background-color: rgba(8,8,8,0.8) !important;
 }
-.contact{
+.contact-section{
 background-color:#131313;
 position:relative;
 }
-.contact-content{
-	font-family: 'Indie Flower', cursive;
+.contact-box{
+	/*font-family: 'Indie Flower', cursive;*/
 	position: absolute;
-    top: 20%;
-    left: 20%;
+    left: 25%;
+    right: 25%;
+    top: 25%;
+    bottom: 15%;
 	background-color: #fff;
-    height: 60vh;
-    right: 20%;
-     border: 15px solid transparent;
-   border-image-source:	url(http://www.letstravelsomewhere.com/wp-content/themes/letstravelsomewhere2013/images/bg-airmail-5.jpg);
+    border: 15px solid transparent;
+    border-image-source:	url(http://www.letstravelsomewhere.com/wp-content/themes/letstravelsomewhere2013/images/bg-airmail-5.jpg);
     border-image-repeat: repeat;
     border-image-slice: 10;
 }
-.general-content{
-	font-size:16px;
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+.contact-heading{
+    padding-left: 5%;
+    padding-top: 5%;
+    font-family: 'Indie Flower', cursive;
+    font-size:3em;
 }
-.contact-no{
-	padding-top: 10%;
+.user-image{
+    padding-top: 25px;
+    padding-right: 50px;
+
 }
-.usrImg{
-	width: 25%;
+.user-image img{
+    max-width:35%;
+}
+
+.general-content p{
+    padding-left: 5%;
+
+}
+.contact-content{
+padding-top: 5%;
+font-size: 1.1em;
+}
+.contact-content .fab{
+    padding-right: 4%;
+}
+.projects{
+   /* background-image: url(../img/trianglify.png);    */
+   background-image: linear-gradient(to left, #2a2827, #21201f, #191817, #0f0e0e, #000000);
+    background-repeat :no-repeat;   
+}
+.projects img{
+width:64px;
+height:64px;
+}
+.projects ul {
+    position: relative;
+    top: 315px; /*for example purposes only*/
+    list-style-type: none;
+    margin: 0;
+    margin-left: 55%;
+    padding: 0;
+}
+.projects ul li {
     position: absolute;
-    right: 20%;
-    top: 30px;
-	
+    -webkit-transition: all 1.5s linear;
+    -moz-transition: all 1.5s linear;
+    transition: all 1.5s linear;
 }
-.contact-icon{
-	display: block;
-    font-size: 1.5em;
+.project-content{
+    font-family: 'Sirin Stencil', cursive;
+    color:white;
+    padding-top: 3%;
+    padding-left: 5%;
+    font-size: 20px;
+}
+.project-content p{
+    margin-top:10px;
+}
+details p{
+    padding-left:50px;
+}
+@media (max-width: 1000px){
+    .contact-box{
+        left: 10%;
+        right: 10%;
+        top: 25%;
+       padding:5%;
+    }
 }
