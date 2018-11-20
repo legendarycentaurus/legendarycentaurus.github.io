@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Indie+Flower);
 @import url(https://fonts.googleapis.com/css?family=Sirin+Stencil);
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
 body{
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;	
 }
@@ -33,12 +34,14 @@ position:relative;
     font-size:3em;
 }
 .user-image{
-    padding-top: 25px;
-    padding-right: 50px;
+    padding-top: 40px;
+    padding-right: 125px;
 
 }
 .user-image img{
-    max-width:35%;
+    width: 65px;
+    height: 65px;
+    transform: scale(1.8);
 }
 
 .general-content p{
@@ -63,7 +66,7 @@ height:64px;
 }
 .projects ul {
     position: relative;
-    top: 315px; /*for example purposes only*/
+    top: 280px; /*for example purposes only*/
     list-style-type: none;
     margin: 0;
     margin-left: 55%;
@@ -78,7 +81,7 @@ height:64px;
 .project-content{
     font-family: 'Sirin Stencil', cursive;
     color:white;
-    padding-top: 3%;
+    padding-top: 2.5%;
     padding-left: 5%;
     font-size: 20px;
 }
@@ -87,7 +90,45 @@ height:64px;
 }
 details p{
     padding-left:50px;
+    font-size: 0.8em;
 }
+
+.home{
+        background-image:url(../img/home.png);
+        background-repeat :no-repeat; 
+ }
+
+ .home-content{
+    padding-top: 4%;
+    text-align: center;
+}
+
+ .home-content h1{
+    color: silver;
+    font-family: 'Dancing Script', cursive;
+    font-size: 800%;
+ }
+ .home-content h1 a{
+    color:unset;
+ }
+ .home-content h1 a i:hover{
+    transform:scale(1.2);
+    
+ }
+ .home-content h2{
+    border-top: 3px solid silver;
+ display: inline-block;
+ font-size: 450%;
+ margin: 0;
+
+ }
+ 
+ /*.about{
+    background-image:url(../img/home.png);
+ background-repeat :no-repeat;   
+}*/
+
+
 @media (max-width: 1000px){
     .contact-box{
         left: 10%;
