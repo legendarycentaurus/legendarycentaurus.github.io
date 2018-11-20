@@ -12,6 +12,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.7.2/jquery.smooth-scroll.min.js"></script>
+  
 
 </head>
 
@@ -47,7 +48,17 @@
     </nav>
 
     <a id="home"></a>
-    <section class="home">Home</section>
+    <section class="home">
+      <div class="home-content">
+        <h1>Nantha Kumar</h1>
+        <h2>Web Developer</h2>
+        <h1><a target="_blank" href="https://github.com/legendarycentaurus"><i class="fab fa-github-square"></i></a>
+          <a target="_blank" href="mailto:nanda220896@gmail.com"><i class="fas fa-envelope"></i></a>
+          </h1>
+      </div>  
+
+
+    </section>
     <a id="about"></a>
     <section class="about">About</section>
 
@@ -85,7 +96,7 @@
         </div>
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 ">
           <ul>
-            <li style="color:white">Work Experience</li>
+            <li style="transform: scale(1.8);"><img class="img-circle pull-right" src="https://centrik.in/wp-content/uploads/2017/02/user-image-.png"></img></li>
             <li><img src="img/html5.png"> </img></li>
             <li><img src="img/css3.png"> </img></li>
             <li><img src="img/JS.png"> </img></li>
@@ -124,7 +135,8 @@
             Get In Touch
           </div>
           <div class="user-image col-lg-6 col-md-6 col-sm-6 col-xs-6">
-            <img class="img-circle pull-right" src="https://centrik.in/wp-content/uploads/2017/02/user-image-.png"></img>
+             <!--   <img  class="img-circle pull-right" src="img/usrImg.jpg"> </img>-->
+           <img class="img-circle pull-right" src="https://centrik.in/wp-content/uploads/2017/02/user-image-.png"></img>
           </div>
         </div>
         <div class="row">
@@ -186,6 +198,11 @@
             performRotateCss(false);
           }
         });
+        $('.projects').on('mouseover', function () {
+          performRotateCss(true);
+
+        });
+        
       });
 
 
